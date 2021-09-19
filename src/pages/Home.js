@@ -39,7 +39,7 @@ const Home = () => {
               Here you can watch out all my projects but also you can see it in
               action with <span className="highlighted">live execution</span>
             </p>
-            <a className="link link-pri" href="/">
+            <a className="link link-pri" href="/projects">
               Browse Projects
             </a>
           </div>
@@ -54,7 +54,7 @@ const Home = () => {
               My <span className="highlighted">Blogs</span>
             </h2>
             <p>Take a look at my blogs here, they are very simple</p>
-            <a className="link link-sec" href="/">
+            <a className="link link-sec" href="/blogs">
               My Blogs
             </a>
           </div>
