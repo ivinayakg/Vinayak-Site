@@ -1,13 +1,300 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: sans-serif;
+  margin: 0rem;
+  padding: 0rem;
 }
+
+hr {
+  color: rgba(0, 0, 0, 0.075);
+  margin-top: 2.25rem;
+}
+
+.reverse-row {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
+}
+
+.box-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.section {
+  padding: 2rem 3rem;
+}
+
+.section img {
+  width: 40%;
+  margin: 1rem 0rem;
+}
+
+.section .content {
+  margin: auto 0rem;
+}
+
+.section .content h1,
+.section .content h2 {
+  margin-bottom: 0.25rem;
+}
+
+.section .content p {
+  font-size: 1.2rem;
+  margin: 0rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.ow {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.small {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 0.95rem;
+  margin-bottom: 0rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 3.5rem;
+}
+
+.highlighted {
+  color: #2563eb !important;
+}
+
+#nav {
+  padding: 1rem 3rem !important;
+  background-color: #2563eb;
+  border-bottom-left-radius: 4.5rem;
+}
+
+#nav .nav-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+#nav .brand a {
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#nav .link {
+  color: white;
+}
+
+.menu-links {
+  margin: auto 0rem;
+}
+
+.menu-links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-links ul li {
+  margin-right: 1.75rem;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.link a {
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+}
+
+.link-pri {
+  margin-top: 0.45rem;
+  font-size: 1rem;
+  background-color: #2563eb;
+  border-radius: 0.5rem;
+  color: white;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0.9rem;
+  display: block;
+  font-weight: bold;
+}
+
+.link-sec {
+  margin-top: 0.45rem;
+  font-size: 1rem;
+  color: #2563eb;
+  border-radius: 0.5rem;
+  border: 1px solid #2563eb;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0.9rem;
+  display: block;
+  font-weight: bold;
+}
+
+.link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 28%;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards h2 {
+  color: #2563eb;
+  font-size: 1.8rem;
+  margin-bottom: 0rem;
+}
+
+.cards p {
+  padding-right: 7rem;
+}
+
+.blog h1 {
+  margin-bottom: 0rem;
+}
+
+.blog .blog-p {
+  color: rgba(10, 10, 10, 0.7);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.08rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .link {
+    margin: 0.45rem auto;
+  }
+  .reverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .hide {
+    display: none !important;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0rem;
+  }
+  .section {
+    padding: 0.95rem 2.45rem !important;
+  }
+  #nav {
+    border-bottom-left-radius: 3.5rem;
+  }
+  .menu-icon {
+    color: white;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    margin: auto 0rem;
+    z-index: 10;
+    -webkit-transition: ease 500ms;
+    transition: ease 500ms;
+  }
+  .brand h1 {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600 !important;
+  }
+  .menu-links {
+    padding: 1.5rem;
+    position: absolute;
+    top: 2.2rem;
+    right: 0px;
+    background-color: #2563eb;
+    opacity: 0.95;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    border-bottom-left-radius: 1rem;
+  }
+  .menu-links ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 0.2rem;
+  }
+  .menu-links ul li {
+    margin: 0rem 0rem 1.5rem 0rem;
+  }
+  .section img {
+    width: 100%;
+  }
+  .content {
+    text-align: center;
+    padding: 0.8rem 0rem;
+  }
+  .content h2 {
+    margin-bottom: 0.5rem;
+  }
+  .cards p {
+    padding-right: 0rem;
+  }
+  .link-box {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
