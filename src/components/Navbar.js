@@ -12,7 +12,7 @@ const Navbar = () => {
     if (isMobile) {
       menuBox.current.style.display = "none";
     } else {
-      menuBox.current.style.display = "display";
+      menuBox.current.style.display = "block";
     }
   }, [isMobile]);
 
@@ -23,7 +23,11 @@ const Navbar = () => {
       menuBox.current.style.display = "block";
     }
     setMenuI(!menuI);
-    console.log(menuBox.current.style);
+  };
+
+  const linkClick = () => {
+    menuBox.current.style.display = "none";
+    setMenuI(true);
   };
 
   return (
@@ -43,13 +47,19 @@ const Navbar = () => {
         <div className="menu-links" ref={menuBox}>
           <ul>
             <li className="link">
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={linkClick}>
+                Home
+              </Link>
             </li>
             <li className="link">
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects" onClick={linkClick}>
+                Projects
+              </Link>
             </li>
             <li className="link">
-              <Link to="/blogs">Blogs</Link>
+              <Link to="/blogs" onClick={linkClick}>
+                Blogs
+              </Link>
             </li>
           </ul>
         </div>
