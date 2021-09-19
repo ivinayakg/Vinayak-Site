@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -39,9 +41,9 @@ const Home = () => {
               Here you can watch out all my projects but also you can see it in
               action with <span className="highlighted">live execution</span>
             </p>
-            <a className="link link-pri" href="/projects">
+            <Link className="link link-pri" to="/projects">
               Browse Projects
-            </a>
+            </Link>
           </div>
           <img src="images/projects.svg" alt="decoration" />
         </div>
@@ -54,9 +56,9 @@ const Home = () => {
               My <span className="highlighted">Blogs</span>
             </h2>
             <p>Take a look at my blogs here, they are very simple</p>
-            <a className="link link-sec" href="/blogs">
+            <Link className="link link-sec" to="/blogs">
               My Blogs
-            </a>
+            </Link>
           </div>
           <img src="images/blogs.svg" alt="decoration" className="hide" />
         </div>
