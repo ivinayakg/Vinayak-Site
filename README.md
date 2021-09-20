@@ -6,4 +6,4 @@ My name is Vinayak I'm currently 18 years old and I have a keen interest in tech
 On this portfolio of mine i would be creating a lot of projects ranging from very basic codes to a full fledge websites with backend(Gonna take a while).
 Thanks! See you around!!!
 
-# The Portfolio itself is created in react and is hosted on heroku.
+# The Portfolio itself is created in react and is hosted on netlify.
