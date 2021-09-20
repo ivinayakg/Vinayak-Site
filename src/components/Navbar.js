@@ -26,8 +26,10 @@ const Navbar = () => {
   };
 
   const linkClick = () => {
-    menuBox.current.style.display = "none";
-    setMenuI(true);
+    if (isMobile) {
+      menuBox.current.style.display = "none";
+      setMenuI(true);
+    }
   };
 
   return (
